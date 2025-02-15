@@ -5,7 +5,7 @@ import numpy as np
 import joblib
 
 app = FastAPI()
-model = joblib.load("models/ridge_regression.pkl")
+model = joblib.load("models/random_forest_regression.pkl")
 
 class PredictionRequest(BaseModel):
     z_dr16q: float
