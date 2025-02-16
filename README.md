@@ -120,4 +120,8 @@ uvicorn main:app --reload
 
 ## Conclusion
 
-...
+The implementation of machine learning for black hole mass prediction provides a promising pathway for improving efficiency and accuracy in astrophysical studies. Random Forest Regression outperformed other models in this study, achieving the lowest MSE and highest R² scores. Future work will involve refining the models, expanding the dataset, and incorporating additional astrophysical features to enhance predictive power.
+
+## Acknowledgment
+
+I would like to thank Dr. Raid Suleiman and Fatma Yousef from the Atomic and Molecular Physics Division, Center for Astrophysics | Harvard & Smithsonian, for their invaluable support and guidance in preparing this paper.
