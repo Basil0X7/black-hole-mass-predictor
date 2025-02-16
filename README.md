@@ -77,22 +77,35 @@ These observations highlight the need for further refinement in feature selectio
 
 To ensure the accuracy and consistency of the dataset, I used the following astrophysical formulas to cross-check the data:
 
-1. **Formula 1:**
-   \[
-   M_{BH} = f \times (2^{\left(\frac{FWHM_{HB}}{1000}\right)}) \times \left(0.5^{\left(\frac{L_{5100}}{10^{44}}\right)}\right)
-   \]
+## Data Verification Formulas
 
-   This formula relates the black hole mass \( M_{BH} \) to the FWHM of Hβ and the luminosity at 5100 Å (\( L_{5100} \)), providing a theoretical way to estimate the black hole mass based on these parameters.
+To ensure the accuracy and consistency of the dataset, the following astrophysical formulas were used to cross-check the data:
 
-2. **Formula 2:**
-   \[
-   M_{BH} = A + B \times \log_{10}\left(\frac{FWHM}{1000}\right) + C \times \log_{10}\left(\frac{L}{10^{44}}\right)
-   \]
+#### **Formula 1:**
 
-   This formula is a more generalized relation using logarithmic scaling for both FWHM and luminosity, where \( A \), \( B \), and \( C \) are constants based on empirical data.
+The first formula provides a theoretical estimation of the black hole mass based on the Full Width at Half Maximum (FWHM) of the Hβ emission line and the luminosity at 5100 Å:
 
-These formulas were used as additional methods to verify the consistency of the black hole mass predictions derived from the machine learning models and to ensure the integrity of the data.
+![image](https://github.com/user-attachments/assets/2c5fae6d-4b69-4e0a-a88c-34b3362eb1da)
 
+Where:
+- \( M_{\text{BH}} \) is the black hole mass.
+- \( FWHM_{\text{H}\beta} \) is the Full Width at Half Maximum of the Hβ emission line.
+- \( L_{5100} \) is the luminosity at 5100 Å.
+
+This formula relates the black hole mass \( M_{\text{BH}} \) to the spectral width and luminosity, providing a way to estimate the mass.
+
+#### **Formula 2:**
+
+The second formula uses a logarithmic approach to estimate the black hole mass. It is based on empirical constants \( A \), \( B \), and \( C \) derived from observational data:
+
+![image](https://github.com/user-attachments/assets/34b659da-20b6-4230-8d66-b27a15b9711f)
+
+Where:
+- \( M_{\text{BH}} \) is the black hole mass.
+- \( FWHM \) is the Full Width at Half Maximum of the emission lines.
+- \( L \) is the luminosity (usually \( L_{5100} \)).
+
+This formula uses logarithmic scaling for both the FWHM and luminosity, with constants \( A \), \( B \), and \( C \) based on empirical data to match observed trends.
 ## Usage
 
 1. Install Libraries
