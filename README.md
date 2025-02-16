@@ -73,6 +73,25 @@ The poor performance of these models can be attributed to several factors:
 
 These observations highlight the need for further refinement in feature selection, model choice, and hyperparameter tuning for more accurate predictions.
 
+## Data Verification Formulas
+
+To ensure the accuracy and consistency of the dataset, I used the following astrophysical formulas to cross-check the data:
+
+1. **Formula 1:**
+   \[
+   M_{BH} = f \times (2^{\left(\frac{FWHM_{HB}}{1000}\right)}) \times \left(0.5^{\left(\frac{L_{5100}}{10^{44}}\right)}\right)
+   \]
+
+   This formula relates the black hole mass \( M_{BH} \) to the FWHM of Hβ and the luminosity at 5100 Å (\( L_{5100} \)), providing a theoretical way to estimate the black hole mass based on these parameters.
+
+2. **Formula 2:**
+   \[
+   M_{BH} = A + B \times \log_{10}\left(\frac{FWHM}{1000}\right) + C \times \log_{10}\left(\frac{L}{10^{44}}\right)
+   \]
+
+   This formula is a more generalized relation using logarithmic scaling for both FWHM and luminosity, where \( A \), \( B \), and \( C \) are constants based on empirical data.
+
+These formulas were used as additional methods to verify the consistency of the black hole mass predictions derived from the machine learning models and to ensure the integrity of the data.
 
 ## Usage
 
