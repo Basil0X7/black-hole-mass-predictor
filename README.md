@@ -63,9 +63,14 @@ The correlation between features and their predictive influence suggests that em
 
 ## Usage
 
-### Install Libraries:
-
-Install the required libraries by running:
-
+1. Install Libraries
 ```bash
 pip install -r requirements.txt
+```
+2. Run the Program
+```bash
+uvicorn main:app --reload
+```
+3. Click [http://127.0.0.1:8000](http://127.0.0.1:8000)
+
+## Conclusion
