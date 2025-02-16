@@ -61,6 +61,19 @@ Using Random Forest Regression, we evaluated the relative importance of each fea
 
 The correlation between features and their predictive influence suggests that emission line properties and luminosities remain the most critical predictors of black hole mass, aligning with established astrophysical theories.
 
+### Negative Values in Model Metrics
+
+It is important to note the occurrence of negative values in the **R²** and **MSE** metrics for some models, particularly Linear, Ridge, and Lasso Regression. These negative values are likely due to the models underfitting the data, which means they are not capturing the underlying patterns effectively. In regression analysis, R² values can be negative when the model performs worse than simply predicting the mean value of the target variable (LOGMBH). Similarly, high MSE values and negative R² indicate poor model performance in terms of predicting black hole mass.
+
+The poor performance of these models can be attributed to several factors:
+
+1. **Feature Engineering**: The chosen features may not fully capture the complexity of the relationship between the input variables and the black hole mass, leading to suboptimal performance for simpler models like Linear and Ridge Regression.
+2. **Model Complexity**: More complex models, such as Random Forest Regression, are better equipped to capture non-linear relationships and interactions between features, explaining why they outperformed the other models.
+3. **Hyperparameter Tuning**: The models might require further tuning of their hyperparameters to achieve optimal performance.
+
+These observations highlight the need for further refinement in feature selection, model choice, and hyperparameter tuning for more accurate predictions.
+
+
 ## Usage
 
 1. Install Libraries
